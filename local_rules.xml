@@ -1,0 +1,11 @@
+<!-- ADD THESE TO YOUR XML FİLE. -->
+<!-- /var/ossec/etc/rules/local_rules.xml -->
+
+<group name="cypho,ti,">
+  <rule id="810000" level="7">
+    <decoded_as>json</decoded_as>
+    <field name="integration">cypho_ti</field>
+    <description>Cypho TI Issue: $(title)</description>
+    <group>cypho, ti, external</group>
+  </rule>
+</group>
